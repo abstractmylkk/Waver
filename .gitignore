@@ -1,0 +1,11 @@
+# SwiftPM build output
+.build/
+.swiftpm/
+*.xcodeproj/
+xcuserdata/
+
+# Built Waver.app / Waver.component and rendered icon (recreated by ./build.sh)
+build/
+
+# macOS
+.DS_Store
