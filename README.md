@@ -5,8 +5,8 @@ A minimal open-source macOS loudness + waveform meter.
 ## Build
 
 ```bash
-./build.sh             # → build/Waver.app + build/Waver.component
-./build.sh --install   # app → /Applications, AU → ~/Library/Audio/Plug-Ins/Components
+./build.sh             # -> build/Waver.app + build/Waver.component
+./build.sh --install   # app -> /Applications, AU -> ~/Library/Audio/Plug-Ins/Components
 ```
 
 ## Audio Unit Plug-in
@@ -23,9 +23,9 @@ Requires macOS 14.4+ and Xcode command-line tools (for building). `swift run -c 
 
 ## Sources
 
-- **System Audio** – everything the Mac plays (Core Audio process tap; no BlackHole/Loopback needed).
-- **Applications** – a single app, e.g. *Ableton Live* (listed while it has audio running).
-- **Input Devices** – audio interfaces or loopback drivers.
+- **System Audio** - everything the Mac plays (Core Audio process tap; no BlackHole/Loopback needed).
+- **Applications** - a single app, e.g. *Ableton Live* (listed while it has audio running).
+- **Input Devices** - audio interfaces or loopback drivers.
 
 The first time you meter system/app audio, macOS asks for permission to capture audio. If you declined, enable Waver under
 System Settings › Privacy & Security › Screen & System Audio Recording (System Audio Recording Only).
