@@ -11,7 +11,7 @@ A minimal open-source macOS loudness + waveform meter.
 
 ## Audio Unit (Ableton Live)
 
-`Waver.component` is an AUv2 effect by mylkAudio (ME) (`aufx Wavr Mylk`, universal arm64/x86_64). It passes audio through
+`Waver.component` is an AUv2 effect by mylkAudio (or just abstractmylkk). It passes audio through
 untouched and meters it. In Live: Settings › Plug-Ins › enable *Use Audio Units v2*, press *Rescan*, then drag
 **Plug-Ins › Audio Units › mylkAudio › Waver** onto the Master track (last in the chain, after your limiter).
 Click the wrench icon on the device to open the meter.
