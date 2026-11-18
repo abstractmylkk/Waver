@@ -14,9 +14,9 @@ A minimal open-source macOS loudness + waveform meter.
 `Waver.component` is an AUv2 effect by mylkAudio (or just abstractmylkk). It passes audio through
 untouched and meters it.
 
-- **Reset on Play** (on by default) clears integrated loudness, LRA and peaks whenever Live's transport starts,
+- **Reset on Play** (on by default) clears integrated loudness, LRA and peaks whenever you restart your track,
   so each playthrough is measured on its own.
-- Target, time window, scale and Reset-on-Play are saved with the Live Set.
+- Target, time window, scale and Reset-on-Play are saved with the your DAW project.
 - Check the install with `auval -v aufx Wavr Mylk`.
 
 Requires macOS 14.4+ and Xcode command-line tools (for building). `swift run -c release WaverSelfTest` checks the meter against EBU reference signals.
