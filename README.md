@@ -1,6 +1,6 @@
 # Waver
 
-A minimal macOS loudness + waveform meter for checking LUFS and compression/limiting while working in Ableton Live.
+A minimal open-source macOS loudness + waveform meter.
 
 ## Build
 
@@ -11,7 +11,7 @@ A minimal macOS loudness + waveform meter for checking LUFS and compression/limi
 
 ## Audio Unit (Ableton Live)
 
-`Waver.component` is an AUv2 effect by mylkAudio (`aufx Wavr Mylk`, universal arm64/x86_64). It passes audio through
+`Waver.component` is an AUv2 effect by mylkAudio (ME) (`aufx Wavr Mylk`, universal arm64/x86_64). It passes audio through
 untouched and meters it. In Live: Settings › Plug-Ins › enable *Use Audio Units v2*, press *Rescan*, then drag
 **Plug-Ins › Audio Units › mylkAudio › Waver** onto the Master track (last in the chain, after your limiter).
 Click the wrench icon on the device to open the meter.
@@ -21,7 +21,7 @@ Click the wrench icon on the device to open the meter.
 - Target, time window, scale and Reset-on-Play are saved with the Live Set.
 - Check the install with `auval -v aufx Wavr Mylk`.
 
-Requires macOS 14.4+ and Xcode command-line tools. `swift run -c release WaverSelfTest` checks the meter against EBU reference signals.
+Requires macOS 14.4+ and Xcode command-line tools (for building). `swift run -c release WaverSelfTest` checks the meter against EBU reference signals.
 
 ## Sources
 
@@ -43,4 +43,4 @@ System Settings › Privacy & Security › Screen & System Audio Recording (Syst
 | PLR | Max true peak − integrated loudness |
 
 Waveform colours show where the energy is: red = lows, yellow = mids, blue = highs. `⌘R` resets statistics,
-`⌘P` pauses, `⌘L` switches the waveform to a dB scale. The pin button keeps the window above Live.
+`⌘P` pauses, `⌘L` switches the waveform to a dB scale. The pin button keeps the window above other apps.
