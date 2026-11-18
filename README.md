@@ -42,3 +42,7 @@ System Settings › Privacy & Security › Screen & System Audio Recording (Syst
 
 Waveform colours show where the energy is: red = lows, yellow = mids, blue = highs. `⌘R` resets statistics,
 `⌘P` pauses, `⌘L` switches the waveform to a dB scale. The pin button keeps the window above other apps.
+
+
+
+Built with the help of Claude Code.
